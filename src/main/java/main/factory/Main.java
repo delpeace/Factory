@@ -22,7 +22,7 @@ public class Main {
         Car ford = new Car("Ford Fiesta", 2015, 190, "red");
         ford.showData();
         
-        Car chevrolet = new Car("Chevrolet Impala", 1967, 210, "black");
+        Car chevrolet = new Car("Chevrolet Impala", 1967, 210, "black", 55, 45, 9, 100500);
         chevrolet.showData();
         
         

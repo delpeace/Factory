@@ -14,6 +14,7 @@ public class Car {
     private int maxFuel;
     private int currentFuel;
     private int consumption;
+    private int mileage;
     
     
     public Car() {
@@ -34,10 +35,15 @@ public class Car {
         
     }
     
-    public Car(int customMaxFuel, int customCurrentFuel, int customConsumption) {
+    public Car(String customModel, int customBuildYear, int customMaxSpeed, String customColor, int customMaxFuel, int customCurrentFuel, int customConsumption, int customMileage) {
+        this.model = customModel;
+        this.buildYear = customBuildYear;
+        this.maxFuel = customMaxSpeed;
+        this.color = customColor;
         this.maxFuel = customMaxFuel;
         this.currentFuel = customCurrentFuel;
         this.consumption = customConsumption;
+        this.mileage = customMileage;
                 
     }
     
@@ -99,6 +105,15 @@ public class Car {
         this.consumption = customConsumption;
     }
     
+    public int getMileage () {
+        return this.mileage;
+    }
+    
+    public void setMileage(int customMileage) {
+        this.mileage = customMileage;
+    }
+    
+    
     public String getVehicleType () {
         return this.vehicleType;
     }
@@ -110,11 +125,12 @@ public class Car {
         System.out.println("Potrosnja: " + this.getConsumption());        
         System.out.println("Stanje rezervoara: " + this.getCurrentFuel());
         System.out.println("Kapacitet rezervoara: " + this.getMaxFuel());  
+        System.out.println("Predjena kilometraza: " + this.getMileage());
         System.out.println("");
     }  
     
     public void travel(int distanceTraveled) {
-        // devinisati novi atribut 'milleage'
+        // definisati novi atribut 'mileage'
         //napraviti get i set metode
         //prosiriti jedan od konstruktora da moze da se settuje  i milleage
         
