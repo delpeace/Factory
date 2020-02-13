@@ -22,8 +22,31 @@ public class Main {
         Car ford = new Car("Ford Fiesta", 2015, 190, "red");
         ford.showData();
         
-        Car chevrolet = new Car("Chevrolet Impala", 1967, 210, "black", 55, 45, 9, 100500);
+        Car chevrolet = new Car("Chevrolet Impala", 1967, 210, "black", 50, 40, 10, 500, 2, 5);
         chevrolet.showData();
+        
+//        chevrolet.travel(20);
+//        chevrolet.showData();
+//        
+//        chevrolet.fuelUp(50);
+//        chevrolet.travel(400);
+//        chevrolet.showData();
+
+        chevrolet.setPassengers(2);
+        chevrolet.showData();
+//        
+//        chevrolet.getIn();
+//        chevrolet.getIn();
+//        chevrolet.getOut();
+//        chevrolet.getIn(3);
+//        chevrolet.getIn(8);
+//        chevrolet.getOut(10);
+//        chevrolet.getOut(2);
+//        chevrolet.getOut(1);
+//        chevrolet.getOut(1);
+        chevrolet.getIn(2);
+        
+        
         
         
 ////        fiat.model = "Fiat Punto";
