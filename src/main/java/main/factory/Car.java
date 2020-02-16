@@ -188,19 +188,32 @@ public class Car {
            this.setPassengers(this.getPassengers() + numberOfPeople);
            System.out.println(numberOfPeople + " osoba je usla u auto. Novo stanje je: " + this.getPassengers());
        } else {
-           System.out.println("Automobil je pun. Nema mesta za jos jednog putnika");
+           System.out.println("U automobilu je trenutno " + this.getPassengers() + " putnika. Ne mogu uci jos " + numberOfPeople + " osoba.");
        }
     }
 
     public void getOut() {
         //1 osoba je izasla iz vozila
-    }
+        if (this.getPassengers() - 1 >= 0) {
+           this.setPassengers(this.getPassengers() - 1);
+           System.out.println("Jedna osoba je izasla iz auta. Novo stanje je: " + this.getPassengers());
+       } else {
+           System.out.println("U automobilu je trenutno " + this.getPassengers() + " putnika. Ne moze izaci 1 putnik.");
+       }
+    }  
     
     public void getOut(int numberOfPeople) {
         //numberOfPeople osoba je izaslo iz vozila
+        if (this.getPassengers() - numberOfPeople >= 0) {
+           this.setPassengers(this.getPassengers() - numberOfPeople);
+           System.out.println(numberOfPeople + " osoba je izaslo iz auta. Novo stanje je: " + this.getPassengers());
+       } else {
+           System.out.println("U automobilu je trenutno " + this.getPassengers() + " putnika. Ne mogu izaci " + numberOfPeople + " putnika.");
+       }
     }
-        
-   }
+}
+    
+    
     
 
     //trenutni broj putnika

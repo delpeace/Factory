@@ -32,7 +32,7 @@ public class Main {
 //        chevrolet.travel(400);
 //        chevrolet.showData();
 
-        chevrolet.setPassengers(2);
+        chevrolet.setPassengers(0);
         chevrolet.showData();
 //        
 //        chevrolet.getIn();
@@ -44,7 +44,11 @@ public class Main {
 //        chevrolet.getOut(2);
 //        chevrolet.getOut(1);
 //        chevrolet.getOut(1);
-        chevrolet.getIn(2);
+        chevrolet.getIn(6);
+        chevrolet.getOut();
+        chevrolet.getIn(4);
+        chevrolet.getOut(2);
+        chevrolet.getOut(3);
         
         
         
