@@ -198,7 +198,7 @@ public class Car {
            this.setPassengers(this.getPassengers() - 1);
            System.out.println("Jedna osoba je izasla iz auta. Novo stanje je: " + this.getPassengers());
        } else {
-           System.out.println("U automobilu je trenutno " + this.getPassengers() + " putnika. Ne moze izaci 1 putnik.");
+           System.out.println("U automobilu je trenutno 0 putnika. Ne moze izaci 1 putnik.");
        }
     }  
     

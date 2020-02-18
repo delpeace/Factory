@@ -48,7 +48,9 @@ public class Main {
         chevrolet.getOut();
         chevrolet.getIn(4);
         chevrolet.getOut(2);
-        chevrolet.getOut(3);
+        chevrolet.getOut(2);
+        chevrolet.getOut();
+              
         
         
         
